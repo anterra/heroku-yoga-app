@@ -3,17 +3,17 @@ import numpy as np
 import pandas as pd
 
 # load in final model
-f = open("final_model", "rb")
+f = open("final_model.data", "rb")
 model = pickle.load(f)
 f.close()
 
 # load in DataFrame of pose stats for making prediction on
-f = open("flask_app_df", "rb")
+f = open("flask_app_df.data", "rb")
 df = pickle.load(f)
 f.close()
 
 # load in yoga poses for user to select from
-f = open("all_poses", "rb")
+f = open("all_poses.data", "rb")
 all_poses = pickle.load(f)
 f.close()
 
